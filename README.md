@@ -30,3 +30,11 @@ student number: 300114162
 #cas 6
 
 ![Cas6 ER](https://github.com/ddesl069/csi2532_playground/blob/Lab03/lab%2003/Cas6.png)
+
+#Lab 4
+
+#Diagrammes Relationnels
+
+#Cas 1
+
+![Cas1 RE]()
