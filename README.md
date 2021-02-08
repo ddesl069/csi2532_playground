@@ -36,5 +36,14 @@ student number: 300114162
 #Diagrammes Relationnels
 
 #Cas 1
+![Cas1 RE](https://github.com/ddesl069/csi2532_playground/blob/Lab04/lab%2004/Cas%201.png?raw=true)
 
-![Cas1 RE]()
+#Cas 3
+![Cas3 RE](https://github.com/ddesl069/csi2532_playground/blob/Lab04/lab%2004/Cas%203.png?raw=true)
+
+#Cas 5
+![Cas5 RE](https://github.com/ddesl069/csi2532_playground/blob/Lab04/lab%2004/Cas%205.png?raw=true)
+
+#Cas 6
+![Cas6 RE](https://github.com/ddesl069/csi2532_playground/blob/Lab04/lab%2004/Cas%206.png?raw=true)
+
