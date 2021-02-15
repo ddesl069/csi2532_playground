@@ -47,9 +47,47 @@ student number: 300114162
 #Cas 6
 ![Cas6 RE](https://github.com/ddesl069/csi2532_playground/blob/Lab04/lab%2004/Cas%206.png?raw=true)
 
-# SQL code for Lab 3
+# SQL code for Lab 4
+#Schema 1
+```sql
+  CREATE TABLE  Classes (
+    coursID int,
+    PRIMARY KEY (coursID)
+   );
 
-CREATE TABLE  Classes (
+   CREATE TABLE Professors (
+      ID int,
+      PRIMARY KEY (ID)
+     );
+
+  CREATE TABLE Teaches (
+    coursID int,
+    ID int,
+    coursID REFERENCES Classes(coursID),
+    ID REFERENCES Professors(ID)
+   );
+```
+#Schema 3
+```sql
+  CREATE TABLE  Classes (
+    coursID int,
+    PRIMARY KEY (coursID)
+   );
+
+   CREATE TABLE Professors (
+      ID int,
+      PRIMARY KEY (ID)
+     );
+
+  CREATE TABLE Teaches (
+    coursID int,
+    ID int,
+    FOREIGN KEY (ID) REFERENCES Professors(ID)
+   );
+ ```
+#Schema 5
+```sql
+ CREATE TABLE  Classes (
   coursID int,
   PRIMARY KEY (coursID)
  );
@@ -64,4 +102,22 @@ CREATE TABLE Teaches (
   ID int,
   FOREIGN KEY (ID) REFERENCES Professors(ID)
  );
+ ```
+ #Schema 6
+ ```sql
+ CREATE TABLE  Classes (
+  coursID int,
+  PRIMARY KEY (coursID)
+ );
   
+ CREATE TABLE Professors (
+    ID int,
+    PRIMARY KEY (ID)
+   );
+
+CREATE TABLE Teaches (
+  coursID int,
+  ID int,
+  FOREIGN KEY (ID) REFERENCES Professors(ID)
+ );
+ ```
