@@ -61,10 +61,10 @@ student number: 300114162
      );
 
   CREATE TABLE Teaches (
-    coursID int,
-    ID int,
-    coursID REFERENCES Classes(coursID),
-    ID REFERENCES Professors(ID)
+    semester_id int,
+    FOREIGN KEY(coursID) REFERENCES Classes(coursID),
+    FOREIGN KEY(ID) REFERENCES Professors(ID),
+    PRIMARY KEY(ID, courseID)
    );
 ```
 #Schema 3
@@ -77,13 +77,8 @@ student number: 300114162
    CREATE TABLE Professors (
       ID int,
       PRIMARY KEY (ID)
+      FOREIGN KEY(CcourseID) REFERENCES Professors(ID)
      );
-
-  CREATE TABLE Teaches (
-    coursID int,
-    ID int,
-    FOREIGN KEY (ID) REFERENCES Professors(ID)
-   );
  ```
 #Schema 5
 ```sql
@@ -96,11 +91,16 @@ student number: 300114162
     ID int,
     PRIMARY KEY (ID)
    );
+CREATE TABLE Semsester (
+  semesterID int,
+  PRIMARY KEY(semesterID)
+);
 
 CREATE TABLE Teaches (
-  coursID int,
-  ID int,
-  FOREIGN KEY (ID) REFERENCES Professors(ID)
+  FOREIGN KEY(semesterID) REFERENCES Semester(semesterID)
+  FOREIGN KEY(coursID) REFERENCES Classes(coursID),
+  FOREIGN KEY (ID) REFERENCES Professors(ID),
+  PRIMARY KEY(semesterID, coursID, ID)
  );
  ```
  #Schema 6
@@ -116,8 +116,19 @@ CREATE TABLE Teaches (
    );
 
 CREATE TABLE Teaches (
-  coursID int,
-  ID int,
-  FOREIGN KEY (ID) REFERENCES Professors(ID)
+  semesterID int,
+  FOREIGN KEY(coursID) REFERENCES Classes(coursID),
+  FOREIGN KEY(ID) REFERENCES Professors(ID),
+  PRIMARY KEY(semesterID)
  );
+ 
+ CREATE TABLE Group (
+  groupID int,
+  PRIMARY KEY(groupID)
+ );
+ 
+ CREATE TABLE Membersof(
+  otherID,
+  
+ )
  ```
