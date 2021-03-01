@@ -141,3 +141,61 @@ CREATE TABLE Teaches (
   FOREIGN KEY (groupID) REFERENCES Pgroup(groupID)
  );
  ```
+ 
+ Lab 5
+ 
+ Migrations:
+ 
+ 1:
+ 
+ ```sql
+  CREATE TABLE Athlete (
+    id int,
+    nom varchar(255),
+    gender varchar(1),
+    age int,
+    PRIMARY KEY(id)
+  );
+```
+
+2:
+
+```sql
+  CREATE TABLE Migrations (
+ migration varchar(255),
+ migrated_at time,
+ PRIMARY KEY (migration)
+  );
+
+  INSERT INTO migrations (migration, migrated_at) VALUES
+  ('20210301173000-create-athletes.sql', '2021-03-01 17:30:00');
+
+  INSERT INTO migrations (migration, migrated_at) VALUES 
+  ('20210301173000-create-migrations.sql', '2021-03-01 17:30:00');
+```
+
+3:
+
+```sql
+  ALTER TABLE Athlete
+  RENAME COLUMN gender TO athlete_gender;
+
+  INSERT INTO migrations (migration, migrated_at) VALUES
+  ('202003011730000-update-athletes.sql', '2020-03-01 17:30:00');
+```
+
+4:
+
+```sql 
+  CREATE TABLE Competitions (
+    compid int,
+    comp_name varchar(255),
+    venue varchar(255),
+    start_time date,
+    duration time(0),
+    PRIMARY KEY(compid)
+  );
+  INSERT INTO schema_migrations (migration, migrated_at) VALUES
+  ('20210301173000-create-migrations.sql', '2021-03-01 17:30:00');
+```
+
