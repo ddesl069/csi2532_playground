@@ -199,3 +199,28 @@ CREATE TABLE Teaches (
   ('20210301173000-create-migrations.sql', '2021-03-01 17:30:00');
 ```
 
+Lab 6
+
+Question 1
+```sql
+  SELECT name, birthplace
+  FROM artists;
+```
+Question 2
+```sql
+  SELECT title, price
+  FROM artworks
+  WHERE price >1600;
+```
+Question 3
+```sql
+  SELECT title, type
+  FROM artworks
+  WHERE year = 2000 OR artist_name= 'Picasso';
+```
+Question 4
+```sql
+  SELECT name, birthplace
+  FROM artists
+  WHERE dateofbirth BETWEEN '1880-01-01' AND '1930-12-31';
+```
