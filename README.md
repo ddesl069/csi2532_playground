@@ -224,3 +224,16 @@ Question 4
   FROM artists
   WHERE dateofbirth BETWEEN '1880-01-01' AND '1930-12-31';
 ```
+Question 5
+```sql
+  SELECT name, country
+  FROM artists
+  WHERE style IN ('Modern', 'Baroque', 'Renaissance');
+```
+Question 6
+```sql
+  SELECT *
+  FROM artworks
+  GROUP BY title;
+```
+Question 7
