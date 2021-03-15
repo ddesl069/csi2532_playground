@@ -206,36 +206,42 @@ Question 1
   SELECT name, birthplace
   FROM artists;
 ```
+![question1](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question1.png)
 Question 2
 ```sql
   SELECT title, price
   FROM artworks
   WHERE price >1600;
 ```
+![question2](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question2.png)
 Question 3
 ```sql
   SELECT title, type
   FROM artworks
   WHERE year = 2000 OR artist_name= 'Picasso';
 ```
+![question3](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question3.png)
 Question 4
 ```sql
   SELECT name, birthplace
   FROM artists
   WHERE dateofbirth BETWEEN '1880-01-01' AND '1930-12-31';
 ```
+![question4](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question4.png)
 Question 5
 ```sql
   SELECT name, country
   FROM artists
   WHERE style IN ('Modern', 'Baroque', 'Renaissance');
 ```
+![question5](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question5.png)
 Question 6
 ```sql
   SELECT *
   FROM artworks
   GROUP BY title;
 ```
+![question6](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question6.png)
 Question 7
 ```sql
   SELECT name, id 
@@ -243,6 +249,7 @@ Question 7
   INNER JOIN likeartists ON customers.id = likeartists.customer_id
   WHERE artist_name = 'Picasso';
 ```
+![question7](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question7.png)
 Question 8
 ```sql
   SELECT name 
@@ -254,3 +261,4 @@ Question 8
       WHERE style = 'Renaissance')
   AND amount > 30000;
 ```
+![question8](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question8.png)
