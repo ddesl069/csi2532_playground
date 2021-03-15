@@ -207,6 +207,7 @@ Question 1
   FROM artists;
 ```
 ![question1](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question1.png)
+
 Question 2
 ```sql
   SELECT title, price
@@ -214,6 +215,7 @@ Question 2
   WHERE price >1600;
 ```
 ![question2](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question2.png)
+
 Question 3
 ```sql
   SELECT title, type
@@ -221,6 +223,7 @@ Question 3
   WHERE year = 2000 OR artist_name= 'Picasso';
 ```
 ![question3](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question3.png)
+
 Question 4
 ```sql
   SELECT name, birthplace
@@ -228,6 +231,7 @@ Question 4
   WHERE dateofbirth BETWEEN '1880-01-01' AND '1930-12-31';
 ```
 ![question4](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question4.png)
+
 Question 5
 ```sql
   SELECT name, country
@@ -235,6 +239,7 @@ Question 5
   WHERE style IN ('Modern', 'Baroque', 'Renaissance');
 ```
 ![question5](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question5.png)
+
 Question 6
 ```sql
   SELECT *
@@ -242,6 +247,7 @@ Question 6
   GROUP BY title;
 ```
 ![question6](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question6.png)
+
 Question 7
 ```sql
   SELECT name, id 
@@ -250,6 +256,7 @@ Question 7
   WHERE artist_name = 'Picasso';
 ```
 ![question7](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question7.png)
+
 Question 8
 ```sql
   SELECT name 
