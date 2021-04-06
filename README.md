@@ -269,3 +269,54 @@ Question 8
   AND amount > 30000;
 ```
 ![question8](https://github.com/ddesl069/csi2532_playground/blob/Lab06/images%20lab06/question8.png)
+
+Lab 07
+
+``` Question 1a:
+  Les clés candidates de R sont: AB,BC,BD.
+  La relation R n'est pas dans BCNF, La relation R est dans 3NF.
+  
+Question 1b:
+  Les clés candidates de R sont: A,B,C,D.
+  La relation R est dans BCNF, La relation R est dans 3NF.
+  
+Question 1c:
+  Les clés candidates de R sont: B.
+  La relation R n'est pas dans BCNF, La relation R n'est pas dans 3NF.
+ 
+Question 1d:
+  Les clés candidates de R sont: ABC,BCD.
+  La relation R n'est pas dans BCNF, La relation R est dans 3NF.
+  
+Question 1e:
+  Les clés candidates de R sont: AB.
+  La relation R n'est pas dans BCNF, La relation R n'est pas dans 3NF.
+  
+Question 2a:
+  AB->D, est valide. Avec la règle de transitivité
+  if a->B and B->y,
+  then a->y.
+  
+  AB->C and BC->AD,
+  then AB->C.
+  
+Question 2b:
+  A->C est invalide puisque a ne puisse pas identifier de manière unique B. A à besoin de B pour -> C.
+  
+Question 2c:
+  AB->C invalide pour la même raison de 2b.
+  
+Question 2d:
+  A->C or B->C est valide par la règle de décomposition.
+  if a->By,
+  then a->B, a->y.
+  
+  if AB->C,
+  A->C and B->C.
+  
+Question 3:
+  La converture canonique de F={B->A, D->A, AB-> D} est Fd={D->A, B->D}.
+  
+Question 4:
+  La décomposition BCNF de R est ABH-> C, la relation R est dans BCNF.
+```
